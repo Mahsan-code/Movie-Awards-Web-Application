@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+}
+
+header {
+    font-size: 16px;
+}
+
+header,
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+form input,
+form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: white;
+}
+
+form button {
+    color: #ff6f47;
+    background: #f7fffe;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form button:hover {
+    background: #ff6f47;
+    color: white;
+}
+
+.omdb-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.omdb-list {
+    list-style: none;
+}
+
+.omdb-list li {
+    background-color: white;
+    color: black;
+    padding: 15px;
+}
+
+.trash-btn,
+.complete-btn {
+    background: #ff6f47;
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn {
+    background: rgb(11, 212, 162);
+}
+
+.fa-trash,
+.fa-check {
+    pointer-events: none;
+}
+
+.fall {
+    transform: translateY(10rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+
+/*CUSTOM SELECTOR */
+
+.moviePoster {
+    height: 100px;
+    float: right;
+    border: solid 1px gray;
+}
+
+.fas {
+    font-size: 22px;
+}
+
+.dis {
+    color: silver;
+    opacity: 0.5;
+}
+
+.nominationTitle {
+    min-height: 20vh;
+    margin-top: 40px;
+    font-size: 26px;
+}
+
+.nominationLimit {
+    background-color: green;
+    min-height: 50px;
+    padding: 16px;
+}
